@@ -21,7 +21,7 @@ Request.init({
     },
     serviceProvider_location:{
         type: DataTypes.JSON,
-        allowNull:true,  
+        allowNull:true,
     },
     user_id:{
         type: DataTypes.INTEGER,

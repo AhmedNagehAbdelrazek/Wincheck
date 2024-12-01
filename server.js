@@ -3,11 +3,13 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 const mainRoute = require("./Routes/index");
 const globalErrorHandler = require("./middlewares/globalErrorHandler");
+const cors = require("cors");
 
 dotenv.config({ path: ".env" });
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
